@@ -1,4 +1,7 @@
 global _start ; Hi linker we are going to use _start as entry point
+;Author - Anurag Srivastava
+;Student-ID: SLAE-1219
+;Credit - Vivek Ramachandran Sir
 section .text
 
 _start: ; entry point of program
